@@ -19,7 +19,7 @@ linkedin: https://ca.linkedin.com/in/eda-doko-14a24251
 # vimeo: myvimeo
 
 markdown: kramdown
-theme: minima
+theme: jekyll-theme-minimal
 gems:
   - jekyll-feed
   #- jemoji
