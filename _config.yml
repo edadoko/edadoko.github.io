@@ -1,0 +1,98 @@
+title: I can has site pls?
+name: Eda Doko
+email: edadoko@gmail.com
+description: A personal website for Eda Doko.
+baseurl: "" # the subpath of site, e.g. /blog
+url: "" # the base hostname & protocol for site, e.g. http://example.com
+
+## Social Networks
+github_username:  edadoko
+google: https://plus.google.com/u/1/+EdaDoko
+facebook: https://www.facebook.com/edadoko
+instagram: https://www.instagram.com/eda_choko/
+linkedin: https://ca.linkedin.com/in/eda-doko-14a24251
+# twitter: mytwitter
+# pinterest: mypinterest
+# quora: userquora
+# reddit: username
+# medium: medium
+# vimeo: myvimeo
+
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  #- jemoji
+  #- jekyll-mentions
+  #- jekyll-seo-tag
+  #- jekyll-feed
+  #- jekyll-sitemap
+  #- jekyll-gist
+  #- jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+keep_files:
+  - assets
+  - index.html
+
+# if it's an external image, update below for true
+# looks better with square images
+external-image: false
+picture: assets/images/profile.jpg
+
+url: http://edadoko.github.io/
+
+# for larger sit. options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: normal
+
+# if you don't need pagination, comment the *paginate* configs below
+# paginate: 5
+# paginate_path: "blog/:num/"
+
+animation: true
+
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+permalink: /:title/
+
+# To enable google analytics, supply your token below
+# analytics-google: 'UA-MYANALYTICS'
+
+# To enable piwik tracking, supply your url & site ID below
+# analytics-piwik-url: 'piwik.my-host.com'
+# analytics-piwik-id: 1
+
+#############################################
+# When adding projects, about, and blog pages
+# projects: true
+about: false
+# blog: true
+
+#code highligter 
+#highlighter: rouge
+
+#jekyll-mentions:
+#    base_url: https://github.com
+
+# allow comments in your posts
+#disqus: true
+
+# show the "read time" of the posts
+#read-time: true
+
+# show the "tags" inside the posts
+#show-tags: true
+
+# related posts inside a post
+#related: true
+
+# show next & prev links in blog post
+#blog-nav-links: false
+
+# show author block at the end of a post
+#show-author: true
+

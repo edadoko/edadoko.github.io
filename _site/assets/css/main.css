@@ -1,0 +1,180 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans|Pacifico');
+
+/* Main Style */
+
+	html, body, footer, header, section {
+		margin: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		vertical-align: baseline;
+	}
+
+	body {
+		background-image: url("/assets/images/bg.png");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+
+	}
+	
+	footer, header, section {
+		display: block;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+
+/* Box */
+
+	#box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+		position: relative;
+		perspective: 1000px;
+		position: relative;
+		min-height: 100%;
+		padding: 1.5em;
+		z-index: 2;
+		margin-top: 6.6%;
+		margin-bottom: 12%;
+		color: #313f47;
+
+	} 
+
+		/* All sub-elements of box will have stack order of 1 
+		(the greater the z-index, the more in front they appear)*/
+		#box > * {
+			z-index: 1;
+		}
+
+		@media screen and (max-width: 360px) {
+
+			#box {
+				padding: 0.5em;
+			}
+
+		}
+
+		body.is-ie #box {
+			height: 100%;
+		}
+
+
+/* Box Model */
+
+	*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+
+/* Roses */
+
+	#roses {
+		position: relative;
+		max-width: 26em;
+		min-width: 26em;
+		padding: 2.5em 3em 1.8em 3em;
+		background: #ffffff;
+		border-radius: 10px;
+		cursor: default;
+		opacity: 0.9;
+		text-align: center;
+	}
+
+		#roses .picture {
+			position: relative;
+			display: block;
+		}
+
+			#roses .picture img {
+				display: block;
+				margin: 0 auto;
+			}
+
+		@media screen and (max-width: 480px) {
+
+			#roses {
+				min-width: 0;
+				width: 100%;
+				padding: 4em 2em 2.5em 2em ;
+			}
+
+
+		}
+
+
+/* Text */
+
+	#text{
+		font-family: 'Pacifico', cursive;
+		font-size: 1.8em;
+	}
+
+	.text-description{
+		font-family: 'Nunito Sans', sans-serif;
+		font-size: 0.8em;	
+		text-align: justify;
+	
+	}
+
+
+/* List */
+
+	ul.icons {
+		cursor: default;
+		padding-left: 0;
+		margin-top: 1em;
+		margin-bottom: 0;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0em 0.8em;
+		}
+
+			ul.icons li a {
+				position: relative;
+				display: block;
+				width: 3em;
+				height: 3em;
+				line-height: 3em;
+				overflow: hidden;
+				font-family: FontAwesome;
+				color: #ffffff;
+				text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf,
+							 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;
+			}
+
+				ul.icons li a:hover:before {
+					text-shadow: 1.25px 0px 0px #ff7496, -1.25px 0px 0px #ff7496, 
+								 0px 1.25px 0px #ff7496, 0px -1.25px 0px #ff7496;
+				}
+
+				ul.icons li a:before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: inherit;
+					height: inherit;
+					font-size: 1.6em;
+				}
+
+				ul.icons li a:hover {
+					border-color: #ff7496;
+				}
+
+		@media screen and (max-width: 480px) {
+
+			ul.icons li a:before {
+				font-size: 1.6em;
+			}
+
+		}
